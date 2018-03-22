@@ -212,7 +212,7 @@ func Open(cfg Config) (*Backend, error) {
 	}
 
 	restConfig := rest.Config{
-		Connections: 20,
+		Connections: 1,
 		URL:         url,
 	}
 
@@ -240,7 +240,7 @@ func Create(cfg Config) (*Backend, error) {
 	}
 
 	restConfig := rest.Config{
-		Connections: 20,
+		Connections: 1,
 		URL:         url,
 	}
 
